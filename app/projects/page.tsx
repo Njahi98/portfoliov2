@@ -11,7 +11,7 @@ export default function page() {
         A variety of projects I have worked on.
        </p>
        <p className="w-20 h-px mx-auto mt-4 bg-linear-to-r from-fuchsia-300 to-fuchsia-800 rounded-full mb-8"/>
-       <div className=" grid md:grid-cols-2 gap-4">
+       <div className="flex flex-col gap-4">
         <ProjectCard/>
         <ProjectCard/>
        </div>
