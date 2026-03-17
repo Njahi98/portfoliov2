@@ -1,12 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { projectCardType } from "../data/projects";
 
-type projectCardType = {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-}
+
 
 export default function ProjectCard({title,description,image,link}:projectCardType) {
   return (
@@ -17,7 +13,7 @@ export default function ProjectCard({title,description,image,link}:projectCardTy
         <p className="text-start max-w-2xl text-sm text-slate-400">
          {description}
         </p>
-        <Image src={image} width={1920} height={1080} alt="project 1 showcase" className=" rounded-xl"/>
+        <Image src={image} width={1920} height={1080} alt="project showcase Image" className=" rounded-xl"/>
     </div>
     </Link>
   )

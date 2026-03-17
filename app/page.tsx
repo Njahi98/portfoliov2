@@ -2,7 +2,7 @@ import Icons from "@/components/layout/icons"
 import Link from "next/link"
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 pb-16 md:pt-0">
+    <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 pb-16 md:pt-0">
       <div className="pointer-events-none absolute inset-x-0 top-24 -z-10 mx-auto h-64 max-w-xl" />
 
       <section className="mx-auto flex max-w-4xl flex-col items-center text-center">
@@ -54,6 +54,6 @@ export default function Home() {
         </div>
         <Icons />
       </section>
-    </main>
+    </section>
   )
 }

@@ -1,8 +1,10 @@
 import ProjectCard from "@/components/app/project-card";
+import { projects } from "@/components/data/projects";
 export default function page() {
+  console.log(projects.map((project)=>project.images))
   return (
-<main className="mx-auto min-h-screen max-w-4xl px-6 py-32">
-      <section className="mx-auto flex flex-col items-center text-center">
+<section className="mx-auto min-h-screen max-w-4xl px-6 py-32">
+      <div className="mx-auto flex flex-col items-center text-center">
       <h1 className="mb-4 text-2xl font-semibold tracking-tight text-balance text-slate-50 sm:text-5xl md:text-4xl">
         Featured Projects
       </h1>
@@ -15,22 +17,19 @@ export default function page() {
         </div>
 
        <div className="grid md:grid-cols-2 gap-4">
-        <ProjectCard 
-        title="Enhancing ERP Project"
-        description="description"
-        image="/projects/project1/proj1S1.webp"
-        link="/projects/project1"
-        />
-        <ProjectCard 
-        title="Enhancing ERP Project"
-        description="description"
-        image="/projects/project1/proj1S1.webp"
-        link="/projects/project1"
-        />
+     
+     {projects.map((project)=>
+      <ProjectCard key={project.slug}
+      title={project.title}
+      description={project.description}
+      image={project.image}
+      link={project.link}/>
+      
+     )}
         
        </div>
         
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }
