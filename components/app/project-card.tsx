@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projectCardType } from "../data/projects";
+import { projectBase } from "../data/projects";
 
 
 
-export default function ProjectCard({title,description,image,link}:projectCardType) {
+export default function ProjectCard({title,description,image,link}:projectBase) {
   return (
     <Link href={link ? link : '#'}>
-    <div className=" flex flex-col gap-4 border rounded-xl border-slate-800/70 bg-slate-950/70 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl px-6 py-3 max-w-xl w-full mx-auto">
+    <div className=" flex flex-col gap-4 border rounded-xl border-slate-800/70 bg-slate-950/70 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl px-6 py-3 max-w-xl w-full mx-auto hover:border-fuchsia-400/70 transition-all duration-700">
         <p className="text-slate-50 text-start">
           {title}</p>
         <p className="text-start max-w-2xl text-sm text-slate-400">

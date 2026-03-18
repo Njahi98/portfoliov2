@@ -1,5 +1,5 @@
 import { projects } from "@/components/data/projects"
-import { CarouselSize } from "@/components/layout/carousel"
+import { CarouselComponent } from "@/components/layout/carousel"
 import { notFound } from "next/navigation"
 
 interface ProjectPageProps {
@@ -17,7 +17,7 @@ export default async function page({ params }: ProjectPageProps) {
     <section className="mx-auto min-h-screen max-w-4xl px-6 py-32 text-slate-50 ">
   
 
-<CarouselSize images={project.images}/>
+<CarouselComponent images={project.images}/>
 
     </section>
   )
