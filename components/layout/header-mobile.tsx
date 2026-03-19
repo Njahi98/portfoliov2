@@ -4,15 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
-
-const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/Stack", label: "Stack" },
-  { href: "/experience", label: "Experience" },
-  { href: "/education", label: "Education" },
-  { href: "/contact", label: "Contact" },
-]
+import { NAV_ITEMS } from "../data/nav-items"
 
 export default function HeaderMobile() {
   const [open, setOpen] = useState(false)
