@@ -40,7 +40,7 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
 }, [api])
 
   return (
-    <div className="mx-auto flex w-full max-w-xl flex-col justify-center gap-4 rounded-xl border border-slate-800/70 bg-slate-950/70 p-4 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl">
+    <div className="mx-auto flex w-full flex-col justify-center gap-4 rounded-xl border border-slate-800/70 bg-slate-950/70 p-6 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl">
       <Link
         href="/projects"
         className="flex max-w-fit items-center gap-2 hover:opacity-60 hover:-translate-x-1.5 transition-all duration-500"

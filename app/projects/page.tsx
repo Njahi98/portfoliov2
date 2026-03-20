@@ -11,7 +11,7 @@ export default function page() {
           <p className="max-w-2xl text-sm text-balance text-slate-400 sm:text-base">
             A variety of projects I have worked on.
           </p>
-          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-300 to-fuchsia-800" />
+          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">

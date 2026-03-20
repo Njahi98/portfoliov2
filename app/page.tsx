@@ -1,6 +1,6 @@
 import Icons from "@/components/layout/icons"
 import Link from "next/link"
-export default function Home() {
+export default function page() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 pb-16 md:pt-0">
       <div className="pointer-events-none absolute inset-x-0 top-24 -z-10 mx-auto h-64 max-w-xl" />
@@ -34,9 +34,18 @@ export default function Home() {
               ↗
             </span>
           </Link>
+            <a
+          href="/Resume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+            
+            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-500 hover:-translate-y-1"
+          >
+            View my Resume
+          </a>
           <Link
             href="contact"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-500 hover:-translate-y-1"
+            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-500 hover:-translate-y-1"
           >
             Get in Touch
           </Link>

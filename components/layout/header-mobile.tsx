@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { useState } from "react"
+import { Activity, useState } from "react"
 import { NAV_ITEMS } from "../data/nav-items"
 
 export default function HeaderMobile() {
@@ -45,10 +45,9 @@ export default function HeaderMobile() {
           />
         </div>
       </button>
-
-      {open && (
-        <div className="animate-fade-in-down absolute inset-x-4 top-16 rounded-2xl border border-slate-800/80 bg-slate-950/95 p-4 shadow-xl shadow-slate-950/80">
-          <nav className="flex flex-col gap-2 text-xs font-medium tracking-[0.24em] uppercase text-slate-300">
+      <Activity mode={open ? "visible" : "hidden"}>
+        <div className="absolute inset-x-4 top-16 animate-in rounded-2xl border border-slate-800/80 bg-slate-950/95 p-4 shadow-xl shadow-slate-950/80 duration-500 fade-in slide-in-from-top-8 ">
+          <nav className="flex flex-col gap-2 text-xs font-medium tracking-[0.24em] text-slate-300 uppercase">
             {NAV_ITEMS.map((item) => {
               const isActive =
                 item.href === "/"
@@ -79,8 +78,7 @@ export default function HeaderMobile() {
             })}
           </nav>
         </div>
-      )}
+      </Activity>
     </header>
   )
 }
-
