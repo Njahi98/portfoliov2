@@ -16,7 +16,7 @@ export default function HeaderDesktop() {
           href="/"
           className="flex items-center gap-2 pr-4 text-slate-100/90"
         >
-          <Image alt="Njahi logo" height={28} width={28} src="/logo.png" />
+          <Image className="size-7" alt="Njahi logo" height={98} width={76} src="/logo.png" />
         </Link>
 
         <nav className="flex items-center gap-6 text-[0.72rem] font-medium tracking-[0.28em] text-slate-400 uppercase">

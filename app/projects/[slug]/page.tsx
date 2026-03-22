@@ -18,13 +18,13 @@ export default async function page({ params }: ProjectPageProps) {
               <h1 className="mb-4 text-2xl text-center font-semibold tracking-tight text-balance text-slate-50">
           {project.title}
         </h1>
-          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-300 to-fuchsia-800" />
+          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
       <CarouselComponent
         images={project.images}
         githubUrl={project.githubUrl}
         liveDemoUrl={project.liveDemoUrl}
         longDescription={project.longDescription}
-      />
+        />
     </section>
   )
 }

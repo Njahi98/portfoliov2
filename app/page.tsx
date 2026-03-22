@@ -27,7 +27,7 @@ export default function page() {
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="projects"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100  duration-500 hover:-translate-y-1"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100  duration-200 hover:-translate-y-1"
           >
             View Projects
             <span className="inline-block text-xs transition-transform group-hover:translate-x-0.5">
@@ -39,13 +39,13 @@ export default function page() {
           target="_blank" 
           rel="noopener noreferrer"
             
-            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-500 hover:-translate-y-1"
+            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-200 hover:-translate-y-1"
           >
             View my Resume
           </a>
           <Link
             href="contact"
-            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-500 hover:-translate-y-1"
+            className="rounded-full border border-slate-700/80 bg-slate-950/60 px-5 py-2.5 text-sm font-medium text-slate-100 shadow-sm shadow-slate-950/60 transition hover:border-fuchsia-400/70 hover:text-fuchsia-100 duration-200 hover:-translate-y-1"
           >
             Get in Touch
           </Link>
