@@ -6,7 +6,7 @@ export default function ContactItem({ method, href, text, Icon }: Contact) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full items-center gap-2 sm:gap-4 rounded-lg bg-slate-800/50 p-4 text-sm text-slate-400 transition-colors duration-200 hover:bg-slate-800/90 hover:text-slate-200 sm:max-w-xs"
+      className="flex w-full items-center gap-2 sm:gap-4 rounded-lg bg-slate-800/50 p-6 text-sm text-slate-400 transition-colors duration-200 hover:bg-slate-800/90 hover:text-slate-200"
     >
       <Icon className="shrink-0 text-slate-50" size={18} />
 
@@ -16,7 +16,7 @@ export default function ContactItem({ method, href, text, Icon }: Contact) {
       </div>
     </a>
   ) : (
-    <div className="flex w-full items-center gap-4 rounded-lg bg-slate-800/50 p-4 sm:max-w-xs">
+    <div className="flex w-full items-center gap-4 rounded-lg bg-slate-800/50 p-6">
       <Icon className="shrink-0 text-slate-50" size={18} />
 
       <div className="flex flex-col items-start">

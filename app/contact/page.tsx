@@ -16,7 +16,7 @@ export default function page() {
           </p>
           <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
         </div>
-        <div className="flex w-full max-w-md flex-col items-center justify-center gap-4 rounded-xl border border-slate-800/70 bg-slate-950/70 p-2 sm:p-4 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl">
+        <div className="flex w-full max-w-xl flex-col items-center justify-center gap-4 rounded-xl border border-slate-800/70 bg-slate-950/70 p-2 sm:p-4 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl">
           {CONTACT_DATA.map((item) => (
             <ContactItem key={item.id} {...item} />
           ))}

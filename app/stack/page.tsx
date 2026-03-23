@@ -14,7 +14,7 @@ export default function page() {
           </p>
           <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
         </div>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-20 sm:px-6">
 
         {stackCategories.map((stackCategory) => (
           <StackCategory

@@ -16,7 +16,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full flex-col text-left">
+      <div className="mx-auto flex w-full flex-col text-left sm:px-8">
         {EXPERIENCES.map((experience) => (
           <ExperienceItem key={experience.id} {...experience} />
         ))}

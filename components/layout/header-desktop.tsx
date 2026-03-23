@@ -42,7 +42,7 @@ export default function HeaderDesktop() {
                 <span>{item.label}</span>
                 <span
                   className={clsx(
-                    "pointer-events-none absolute inset-x-0 -bottom-1 h-px origin-left bg-linear-to-r from-fuchsia-500 via-violet-400 to-sky-400 transition-transform duration-300",
+                    "pointer-events-none absolute inset-x-0 -bottom-1 h-px origin-left bg-linear-to-r from-fuchsia-300 via-violet-400 to-fuchsia-950 transition-transform duration-300",
                     {
                       "scale-x-100": isActive === true,
                       "scale-x-0 group-hover:scale-x-100": isActive === false,

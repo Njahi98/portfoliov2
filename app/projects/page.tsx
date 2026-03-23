@@ -14,7 +14,7 @@ export default function page() {
           <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 sm:px-6">
           {projects.map((project) => (
             <ProjectCard
               key={project.slug}
