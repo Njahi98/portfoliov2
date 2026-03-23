@@ -23,7 +23,7 @@ export default function HeaderMobile() {
       <button
         type="button"
         aria-label="Toggle navigation"
-        className="relative flex h-9 w-9 items-center justify-center rounded-full border border-slate-700/70 bg-slate-900/80 text-slate-100 shadow-sm shadow-slate-900/80 transition hover:border-fuchsia-500/70 hover:text-fuchsia-300"
+        className="relative flex h-9 w-9 items-center justify-center rounded-full cursor-pointer border border-slate-700/70 bg-slate-900/80 text-slate-100 shadow-sm shadow-slate-900/80 transition hover:border-fuchsia-500/70 hover:text-fuchsia-300"
         onClick={() => setOpen((prev) => !prev)}
       >
         <span className="sr-only">Toggle navigation</span>
