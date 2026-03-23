@@ -18,10 +18,7 @@ export default function page() {
           {projects.map((project) => (
             <ProjectCard
               key={project.slug}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              link={project.link}
+              {...project}
             />
           ))}
         </div>

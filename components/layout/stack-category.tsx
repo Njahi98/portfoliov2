@@ -12,14 +12,11 @@ export default function StackCategory({ name, items }: StackCategory) {
       <p className="mx-auto h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
         </div>
 
-      <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-5">
+      <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-5 justify-items-center">
         {items.map((item) => (
           <StackItem
             key={item.name}
-            name={item.name}
-            alt={item.alt}
-            href={item.href}
-            src={item.src}
+            {...item}
           />
         ))}
       </div>

@@ -150,7 +150,7 @@ export const stackCategories: StackCategory[] = [
         href: "https://code.visualstudio.com/",
       },
       {
-        name: "IntelliJ IDEA",
+        name: "IntelliJ",
         src: "/icons/Idea-Dark.svg",
         alt: "IntelliJ IDEA icon",
         href: "https://www.jetbrains.com/idea/",
@@ -166,12 +166,6 @@ export const stackCategories: StackCategory[] = [
         src: "/icons/Vercel-Dark.svg",
         alt: "Vercel icon",
         href: "https://vercel.com/",
-      },
-      {
-        name: "Netlify",
-        src: "/icons/Netlify-Dark.svg",
-        alt: "Netlify icon",
-        href: "https://www.netlify.com/",
       },
       {
         name: "Linux",

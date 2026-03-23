@@ -2,6 +2,12 @@ import { projects } from "@/components/data/projects"
 import { CarouselComponent } from "@/components/layout/carousel"
 import { notFound } from "next/navigation"
 
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }))
+}
+
 interface ProjectPageProps {
   params: Promise<{ slug: string }>
 }
@@ -15,17 +21,16 @@ export default async function page({ params }: ProjectPageProps) {
 
   return (
     <section className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-4 px-6 py-32 text-slate-50">
-              <h1 className="mb-4 text-2xl text-center font-semibold tracking-tight text-balance text-slate-50">
-          {project.title}
-        </h1>
-          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
+      <h1 className="mb-4 text-center text-2xl font-semibold tracking-tight text-balance text-slate-50">
+        {project.title}
+      </h1>
+      <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
       <CarouselComponent
         images={project.images}
         githubUrl={project.githubUrl}
         liveDemoUrl={project.liveDemoUrl}
         longDescription={project.longDescription}
-        />
+      />
     </section>
   )
 }
-

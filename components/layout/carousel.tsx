@@ -10,8 +10,8 @@ import Image from "next/image"
 import Autoplay from "embla-carousel-autoplay"
 import { useEffect, useState } from "react"
 import clsx from "clsx"
-import { ArrowSquareOutIcon, CaretLeftIcon, GithubLogoIcon } from "@phosphor-icons/react"
 import Link from "next/link"
+import { ArrowSquareOutIcon, CaretLeftIcon, GithubLogoIcon } from "@phosphor-icons/react/dist/ssr"
 
 interface imagesProps {
   images: Array<string>,
