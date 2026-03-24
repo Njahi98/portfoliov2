@@ -1,7 +1,6 @@
 import {
   GithubLogoIcon,
   LinkedinLogoIcon,
-  TranslateIcon,
 } from "@phosphor-icons/react/dist/ssr"
 import ThemeSwitcher from "./theme-switcher"
 
@@ -29,10 +28,6 @@ export default function Footer() {
           >
             <LinkedinLogoIcon size={22} />
           </a>
-          <TranslateIcon
-            size={22}
-            className="cursor-pointer text-slate-600 transition-all duration-300 hover:scale-110 hover:text-fuchsia-500 dark:text-slate-400/80 dark:hover:text-fuchsia-400"
-          />
           <ThemeSwitcher/>
         </div>
       </div>

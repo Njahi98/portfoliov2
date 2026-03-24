@@ -8,7 +8,7 @@ import {
 import Link from "next/link"
 export default function page() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 md:pt-0">
+    <section className="flex min-h-[calc(100dvh-5rem)] sm:min-h-[calc(100dvh-7rem)] flex-col items-center justify-center px-6 pt-10 md:pt-0">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <p className="mb-4 text-xs font-semibold tracking-[0.32em] text-fuchsia-700/80 uppercase dark:text-fuchsia-300/80">
           Full Stack Web Developer
