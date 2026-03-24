@@ -20,8 +20,8 @@ export default async function page({ params }: ProjectPageProps) {
   if (!project) return notFound()
 
   return (
-    <section className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-4 px-6 py-32 text-slate-50">
-      <h1 className="mb-4 text-center text-2xl font-semibold tracking-tight text-balance text-slate-50">
+    <section className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-4 px-6 py-32 text-slate-900 dark:text-slate-50">
+      <h1 className="mb-4 text-center text-2xl font-semibold tracking-tight text-balance text-slate-900 dark:text-slate-50">
         {project.title}
       </h1>
       <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />

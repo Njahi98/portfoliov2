@@ -40,10 +40,10 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
 }, [api])
 
   return (
-    <div className="mx-auto flex w-full flex-col justify-center gap-4 rounded-xl border border-slate-800/70 bg-slate-950/70 p-6 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl">
+    <div className="mx-auto flex w-full flex-col justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-6 shadow-lg shadow-slate-200/60 backdrop-blur-2xl dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-fuchsia-500/10">
       <Link
         href="/projects"
-        className="flex max-w-fit items-center gap-2 hover:opacity-60 hover:-translate-x-1.5 transition-all duration-500"
+        className="flex max-w-fit items-center gap-2 text-slate-700 hover:-translate-x-1.5 hover:opacity-60 transition-all duration-500 dark:text-slate-200"
       >
         <CaretLeftIcon />
         <p>Back to Projects</p>                                                      
@@ -84,9 +84,9 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
                 className={clsx(
                   "inline-block h-2.5 w-2.5 cursor-pointer rounded-full border transition-all duration-200",
                   {
-                    "scale-110 border-slate-200 bg-slate-50 shadow-sm":
+                    "scale-110 border-slate-200 bg-slate-50 shadow-sm dark:border-slate-700 dark:bg-slate-900":
                       current - 1 === index,
-                    "border-slate-300 bg-transparent hover:border-slate-400":
+                    "border-slate-300 bg-transparent hover:border-slate-400 dark:border-slate-700 dark:hover:border-slate-500":
                       current - 1 !== index,
                   }
                 )}
@@ -95,7 +95,7 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
           </div>
         </div>
         <div className="flex flex-col gap-4 text-sm">
-          <p className="whitespace-pre-line max-w-2xl text-sm text-balance text-slate-400 sm:text-base">
+          <p className="whitespace-pre-line max-w-2xl text-sm text-balance text-slate-600 sm:text-base dark:text-slate-400">
             {longDescription}
           </p>
 
@@ -104,7 +104,7 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
             <Link
             href={githubUrl}
             target="_blank"
-            className="flex flex-col md:flex-row justify-center items-center gap-2 px-2 py-2 rounded-md bg-slate-800/70 text-slate-50 hover:bg-slate-800/90 transition-colors duration-200 w-24 md:w-auto"
+            className="flex flex-col md:flex-row justify-center items-center gap-2 px-2 py-2 rounded-md bg-slate-100 text-slate-900 hover:bg-slate-200 transition-colors duration-200 w-24 md:w-auto dark:bg-slate-800/70 dark:text-slate-50 dark:hover:bg-slate-800/90"
             >
              <p> GitHub</p>  <GithubLogoIcon/>
             </Link>
@@ -113,7 +113,7 @@ export function CarouselComponent({ images,githubUrl,liveDemoUrl, longDescriptio
             <Link
             href={liveDemoUrl}
             target="_blank"
-            className="flex flex-col md:flex-row justify-center items-center gap-2 px-2 py-2 rounded-md bg-slate-800/70 text-slate-50 hover:bg-slate-800/90 transition-colors duration-200 w-24 md:w-auto"
+            className="flex flex-col md:flex-row justify-center items-center gap-2 px-2 py-2 rounded-md bg-slate-100 text-slate-900 hover:bg-slate-200 transition-colors duration-200 w-24 md:w-auto dark:bg-slate-800/70 dark:text-slate-50 dark:hover:bg-slate-800/90"
             >
             <p>Live Demo</p><ArrowSquareOutIcon/>
             </Link>

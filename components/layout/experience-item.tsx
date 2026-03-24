@@ -17,10 +17,10 @@ export default function ExperienceItem({
   return (
     <div className="flex gap-2">
       <div className="flex flex-col items-center">
-        <span className="h-3 w-3 rounded-full bg-slate-50" />
-        <span className="w-0.5 flex-1 bg-slate-700" />
+        <span className="h-3 w-3 rounded-full bg-slate-900 dark:bg-slate-50" />
+        <span className="w-0.5 flex-1 bg-slate-200 dark:bg-slate-700" />
       </div>
-      <div className="mb-4 flex w-full flex-col gap-6 rounded-xl border border-slate-800/70 bg-slate-950/70 p-4 text-slate-50 shadow-lg shadow-fuchsia-500/10 backdrop-blur-2xl transition-all duration-200 hover:translate-x-1 hover:bg-slate-950/80">
+      <div className="mb-4 flex w-full flex-col gap-6 rounded-xl border border-slate-200 bg-white/70 p-4 text-slate-900 shadow-lg shadow-slate-200/60 backdrop-blur-2xl transition-all duration-200 hover:translate-x-1 hover:bg-white/90 dark:border-slate-800/70 dark:bg-slate-950/70 dark:text-slate-50 dark:shadow-fuchsia-500/10 dark:hover:bg-slate-950/80">
         <div className="flex flex-col gap-4 md:flex-row md:justify-between">
           <div className="">
             <p className="text-md font-semibold tracking-tight md:text-xl">
@@ -32,7 +32,7 @@ export default function ExperienceItem({
                 href={companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-400 hover:text-slate-50"
+                className="text-sm text-slate-600 hover:text-fuchsia-700 dark:text-slate-400 dark:hover:text-slate-50"
               >
                 {company}
               </a>
@@ -47,11 +47,11 @@ export default function ExperienceItem({
         <div className="flex items-center gap-2">
           <MapPinIcon size={18} />
           <p className="text-sm tracking-tighter">{location}</p>
-          <span className="h-2 w-2 rounded-full bg-slate-50" />
+          <span className="h-2 w-2 rounded-full bg-slate-900 dark:bg-slate-50" />
           <p className="text-sm">{locationType}</p>
         </div>
         <div className="w-full">
-          <p className="text-sm tracking-tight text-balance text-slate-400 sm:text-base sm:tracking-normal">
+          <p className="text-sm tracking-tight text-balance text-slate-600 sm:text-base sm:tracking-normal dark:text-slate-400">
             {description}
           </p>
         </div>
