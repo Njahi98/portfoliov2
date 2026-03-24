@@ -1,7 +1,13 @@
 import Image from "next/image"
-import type { StackItem } from "../data/stack-category"
 
-export function StackItem({ name, src, alt, href }:StackItem) {
+export type StackItemProps = {
+  name: string
+  src: string
+  alt: string
+  href: string
+}
+
+export function StackItem({ name, src, alt, href }: StackItemProps) {
   return (
     <a
       href={href}
@@ -18,7 +24,9 @@ export function StackItem({ name, src, alt, href }:StackItem) {
           className="object-contain"
         />
       </div>
-      <p className="text-center text-sm leading-tight text-slate-600 dark:text-slate-400">{name}</p>
+      <p className="text-center text-sm leading-tight text-slate-600 dark:text-slate-400">
+        {name}
+      </p>
     </a>
   )
 }

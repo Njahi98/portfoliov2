@@ -1,1 +1,19 @@
-{}
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "stack": "Stack",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "footer": {
+    "credit": "Réalisé par Oussama Njahi"
+  },
+  "logoAlt": "Logo Njahi",
+  "toggleNav": "Ouvrir le menu",
+  "toggleTheme": "Changer le thème",
+  "locationType": {
+    "remote": "À distance",
+    "onsite": "Sur site"
+  }
+}

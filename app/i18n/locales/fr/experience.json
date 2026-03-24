@@ -1,1 +1,41 @@
-{}
+{
+  "pageTitle": "Expérience",
+  "pageSubtitle": "Les étapes de mon parcours en développement logiciel.",
+  "items": {
+    "1": {
+      "title": "Diplôme d'ingénieur en informatique",
+      "company": "EPI — École pluridisciplinaire internationale",
+      "date": "Sept. 2021 — Juil. 2024",
+      "location": "Sousse, Tunisie",
+      "description": "Obtention du diplôme d'ingénieur en informatique."
+    },
+    "2": {
+      "title": "Stagiaire développement web",
+      "company": "IWARE",
+      "date": "Fév. 2024 — Juin 2024",
+      "location": "Sousse, Tunisie",
+      "description": "Tableau de bord admin avec React, Spring Boot, MongoDB et JWT. Système de notifications WebSocket et plateforme de gestion de stages avec planification Google Meet."
+    },
+    "3": {
+      "title": "Stagiaire développement web",
+      "company": "IWARE",
+      "date": "Juil. 2023 — Août 2023",
+      "location": "Sousse, Tunisie",
+      "description": "Conception et réalisation d'une page vitrine ERP en React, Tailwind CSS et Framer Motion, responsive avec animations soignées."
+    },
+    "4": {
+      "title": "Cycle préparatoire aux études d'ingénieur",
+      "company": "Faculté des sciences de Monastir",
+      "date": "Sept. 2018 — Juil. 2021",
+      "location": "Monastir, Tunisie",
+      "description": "Cycle préparatoire aux études d'ingénieur."
+    },
+    "5": {
+      "title": "Baccalauréat",
+      "company": "Lycée pilote de Kasserine",
+      "date": "Sept. 2017 — Juin 2018",
+      "location": "Kasserine, Tunisie",
+      "description": "Obtention du baccalauréat."
+    }
+  }
+}

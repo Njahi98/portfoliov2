@@ -1,3 +1,11 @@
 {
-    "title":"Full Stack Web Developer"
+  "title": "Full Stack Web Developer",
+  "heading": "Hi, I'm Oussama Njahi",
+  "intro": "I specialize in crafting modern web apps with React.js, Express.js, Next.js, integrating AI capabilities, and building thoughtful digital experiences — from interface to infrastructure.",
+  "ctaProjects": "View Projects",
+  "ctaResume": "View my Resume",
+  "ctaContact": "Get in Touch",
+  "availability": "Available for job opportunities & freelance",
+  "basedIn": "Based in",
+  "country": "Tunisia"
 }

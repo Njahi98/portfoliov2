@@ -1,1 +1,10 @@
-{}
+{
+  "pageTitle": "Reach Out",
+  "pageSubtitle": "Whether you're interested in discussing a job opportunity, have a project in mind, or just want to say hello, feel free to contact through the available means",
+  "methods": {
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "locationText": "Tunisia"
+}

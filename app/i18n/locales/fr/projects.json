@@ -1,1 +1,33 @@
-{}
+{
+  "pageTitle": "Projets en vedette",
+  "pageSubtitle": "Un aperçu des projets sur lesquels j'ai travaillé.",
+  "projectImageAlt": "Aperçu du projet",
+  "carousel": {
+    "back": "Retour aux projets",
+    "github": "GitHub",
+    "liveDemo": "Démo en ligne",
+    "slideImageAlt": "Capture du projet"
+  },
+  "items": {
+    "textile-pro": {
+      "title": "Tableau de bord admin — usine textile",
+      "description": "Tableau de bord full stack pour la gestion de production textile avec suivi des opérateurs, supervision des produits et indicateurs IA, avec React, TypeScript et Tailwind CSS.",
+      "longDescription": "• Développement d'un tableau de bord admin full stack pour fluidifier la gestion de production textile : suivi des opérateurs, supervision des produits, lignes de production et indicateurs IA.\n\n• Réalisé avec React, TypeScript et Tailwind CSS : tableaux avancés (TanStack), formulaires dynamiques (React Hook Form + Zod), état global avec Zustand.\n\n• UX renforcée avec shadcn/ui et données en temps quasi réel via SWR/Axios.\n\n• Backend Express/Prisma sécurisé avec authentification et contrôle d'accès par rôles."
+    },
+    "erp-project": {
+      "title": "Amélioration d'un projet ERP",
+      "description": "Projet de stage : tableau de bord admin, gestion des stages avec planification Google Meet, notifications temps réel via WebSocket et module de formation des collaborateurs.",
+      "longDescription": "Pendant mon stage (iWare, Sousse) :\n• Tableau de bord admin avec React, Spring Boot et JWT pour les rôles et le contrôle d'accès\n\n• Système de gestion des entretiens avec planification Google Meet\n\n• WebSocket pour notifications push, messagerie temps réel et stockage MongoDB\n\n• Module de formation pour le développement professionnel des collaborateurs"
+    },
+    "recipe-app": {
+      "title": "Application de partage de recettes",
+      "description": "Plateforme full stack avec authentification JWT, pipeline d'images (GridFS, Sharp.js) et API REST complète avec MongoDB.",
+      "longDescription": "• Plateforme full stack Node.js/Express avec JWT et rôles admin/utilisateur/invité\n\n• Pipeline d'images sécurisé (GridFS, Multer, Sharp.js) et schémas MongoDB/Mongoose\n\n• API REST pour recettes, avis, utilisateurs et profils, avec contrôle d'accès, gestion d'erreurs et rendu EJS côté serveur."
+    },
+    "portfolio-v1": {
+      "title": "Portfolio v1",
+      "description": "Portfolio responsive en HTML5, CSS3, JavaScript et React avec animations Framer Motion et formulaire de contact EmailJS.",
+      "longDescription": "• Portfolio v1 en HTML5, CSS3, JavaScript et React, interface responsive et moderne\n\n• Animations et transitions fluides avec Framer Motion\n\n• Validation et état des formulaires avec React Hook Form\n\n• Formulaire de contact intégré avec EmailJS"
+    }
+  }
+}

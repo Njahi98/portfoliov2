@@ -1,3 +1,11 @@
 {
-    "title":"Full Stack Développeur Web"
+  "title": "Développeur web full stack",
+  "heading": "Bonjour, je suis Oussama Njahi",
+  "intro": "Je conçois des applications web modernes avec React.js, Express.js et Next.js, j'intègre des capacités d'IA et je bâtis des expériences numériques soignées — de l'interface à l'infrastructure.",
+  "ctaProjects": "Voir les projets",
+  "ctaResume": "Voir mon CV",
+  "ctaContact": "Me contacter",
+  "availability": "Disponible pour emploi et missions freelance",
+  "basedIn": "Basé en",
+  "country": "Tunisie"
 }

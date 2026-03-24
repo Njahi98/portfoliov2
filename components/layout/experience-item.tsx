@@ -3,7 +3,16 @@ import {
   LinkIcon,
   MapPinIcon,
 } from "@phosphor-icons/react/dist/ssr"
-import { Experience } from "../data/experience"
+
+export type ExperienceItemProps = {
+  title: string
+  company: string
+  companyUrl: string
+  date: string
+  location: string
+  locationTypeLabel: string
+  description: string
+}
 
 export default function ExperienceItem({
   title,
@@ -11,9 +20,9 @@ export default function ExperienceItem({
   companyUrl,
   date,
   location,
-  locationType,
+  locationTypeLabel,
   description,
-}: Experience) {
+}: ExperienceItemProps) {
   return (
     <div className="flex gap-2">
       <div className="flex flex-col items-center">
@@ -48,7 +57,7 @@ export default function ExperienceItem({
           <MapPinIcon size={18} />
           <p className="text-sm tracking-tighter">{location}</p>
           <span className="h-2 w-2 rounded-full bg-slate-900 dark:bg-slate-50" />
-          <p className="text-sm">{locationType}</p>
+          <p className="text-sm">{locationTypeLabel}</p>
         </div>
         <div className="w-full">
           <p className="text-sm tracking-tight text-balance text-slate-600 sm:text-base sm:tracking-normal dark:text-slate-400">

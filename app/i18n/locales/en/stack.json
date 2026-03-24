@@ -1,0 +1,12 @@
+{
+  "pageTitle": "Stack",
+  "pageSubtitle": "A variety of tools I have worked with.",
+  "iconAlt": "{{name}} icon",
+  "categories": {
+    "programmingLanguages": "Programming Languages",
+    "frontendFrameworks": "Frontend Frameworks & Libraries",
+    "backendFrameworks": "Backend Frameworks & Libraries",
+    "databases": "Databases",
+    "devTools": "Dev Tools & Platforms"
+  }
+}

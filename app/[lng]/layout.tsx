@@ -19,6 +19,15 @@ import i18nConfig from "@/i18n.config"
 
 initServerI18next(i18nConfig)
 
+const allNamespaces = [
+  "common",
+  "home",
+  "experience",
+  "projects",
+  "contact",
+  "stack",
+] as const
+
 export async function generateStaticParams() {
   return generateI18nStaticParams()
 }
@@ -46,8 +55,8 @@ export default async function RootLayout({
   params: Promise<{ lng: string }>
 }>) {
   const { lng } = await params
-  const { i18n } = await getT()
-  const resources = getResources(i18n)
+  const { i18n } = await getT([...allNamespaces])
+  const resources = getResources(i18n, [...allNamespaces])
   return (
     <html
       lang={lng}
@@ -60,15 +69,15 @@ export default async function RootLayout({
       )}
     >
       <body>
-          <ThemeProvider>
-            <Background />
-        <I18nProvider language={lng} resources={resources}>
+        <ThemeProvider>
+          <Background />
+          <I18nProvider language={lng} resources={resources}>
             <HeaderDesktop />
             <HeaderMobile />
             {children}
             <Footer />
-        </I18nProvider>
-          </ThemeProvider>
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

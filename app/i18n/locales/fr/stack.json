@@ -1,0 +1,12 @@
+{
+  "pageTitle": "Stack",
+  "pageSubtitle": "Les outils et technologies que j'utilise au quotidien.",
+  "iconAlt": "Icône {{name}}",
+  "categories": {
+    "programmingLanguages": "Langages de programmation",
+    "frontendFrameworks": "Frameworks et bibliothèques front-end",
+    "backendFrameworks": "Frameworks et bibliothèques back-end",
+    "databases": "Bases de données",
+    "devTools": "Outils et plateformes de développement"
+  }
+}

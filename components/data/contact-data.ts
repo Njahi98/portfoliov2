@@ -5,32 +5,29 @@ import {
   PhoneIcon,
 } from "@phosphor-icons/react/dist/ssr"
 
-export type Contact = {
-  id:string
-  method: string
+export type ContactRecord = {
+  id: string
   href?: string
   text: string
   Icon: React.ComponentType<IconProps>
 }
-export const CONTACT_DATA: Contact[] = [
+
+export const CONTACT_RECORDS: ContactRecord[] = [
   {
-    id:"email",
-    method: "Email",
+    id: "email",
     href: "mailto:njahioussama@outlook.com",
     text: "njahioussama@outlook.com",
     Icon: EnvelopeSimpleIcon,
   },
   {
-    id:"phone",
-    method: "Phone",
+    id: "phone",
     href: "tel:+21693147693",
     text: "+216 93 147 693",
     Icon: PhoneIcon,
   },
   {
-    id:"location",
-    method: "Location",
-    text: "Tunisia",
+    id: "location",
+    text: "",
     Icon: MapPinIcon,
   },
 ]

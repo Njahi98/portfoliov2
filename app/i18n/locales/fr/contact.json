@@ -1,1 +1,10 @@
-{}
+{
+  "pageTitle": "Contact",
+  "pageSubtitle": "Que vous souhaitiez échanger sur une opportunité, un projet ou simplement dire bonjour, vous pouvez me joindre par les moyens ci-dessous",
+  "methods": {
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "location": "Localisation"
+  },
+  "locationText": "Tunisie"
+}

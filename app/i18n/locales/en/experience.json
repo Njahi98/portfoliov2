@@ -1,1 +1,41 @@
-{}
+{
+  "pageTitle": "Experience",
+  "pageSubtitle": "The steps I've taken to grow in software development.",
+  "items": {
+    "1": {
+      "title": "Engineering Diploma in Computer Science",
+      "company": "EPI - Multidisciplinary International School",
+      "date": "Sep 2021 — July 2024",
+      "location": "Sousse, Tunisia",
+      "description": "Completed engineering diploma in computer science."
+    },
+    "2": {
+      "title": "Web Development Intern",
+      "company": "IWARE",
+      "date": "Feb 2024 — June 2024",
+      "location": "Sousse, Tunisia",
+      "description": "Developed an admin dashboard with React, Spring Boot, MongoDB, and JWT. Built a WebSocket-based notification system and internship management platform with Google Meet scheduling."
+    },
+    "3": {
+      "title": "Web Development Intern",
+      "company": "IWARE",
+      "date": "July 2023 — Aug 2023",
+      "location": "Sousse, Tunisia",
+      "description": "Designed and built an ERP company landing page using React, Tailwind CSS, and Framer Motion with responsive design and smooth animations."
+    },
+    "4": {
+      "title": "Preparatory Cycle for Engineering Studies",
+      "company": "Faculty of Sciences of Monastir",
+      "date": "Sep 2018 — July 2021",
+      "location": "Monastir, Tunisia",
+      "description": "Completed preparatory cycle for engineering studies."
+    },
+    "5": {
+      "title": "Baccalaureate Diploma",
+      "company": "Kasserine Pioneer High School",
+      "date": "Sep 2017 — June 2018",
+      "location": "Kasserine, Tunisia",
+      "description": "Obtained baccalaureate diploma."
+    }
+  }
+}
