@@ -15,7 +15,12 @@ export const metadata: Metadata = {
     "Full stack web developer portfolio — projects, experience, stack, and contact.",
 }
 
-export default async function page() {
+export default async function page({
+  params,
+}: {
+  params: Promise<{ lng: string }>
+}) {
+  const { lng } = await params
   const { t } = await getT("home")
   const content = {
     title: t("title"),
@@ -45,7 +50,7 @@ export default async function page() {
 
         <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
           <Link
-            href="./projects"
+            href={`/${lng}/projects`}
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100"
           >
             {content.ctaProjects}
@@ -65,7 +70,7 @@ export default async function page() {
             </span>
           </a>
           <Link
-            href="./contact"
+            href={`/${lng}/contact`}
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100"
           >
             {content.ctaContact}
