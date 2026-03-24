@@ -1,18 +1,31 @@
 export default function Background() {
-  
-    return (
-    <div className="fixed -z-10 inset-0 min-h-screen w-full bg-[#020617]">
+  return (
+    <div className="fixed -z-10 inset-0 min-h-screen w-full bg-slate-50 dark:bg-[#020617]">
+      {/* Light mode */}
+      <div
+        className="absolute inset-0 z-0 dark:hidden"
+        style={{
+          background: "#f8fafc",
+          backgroundImage: `
+            linear-gradient(to right, rgba(148,163,184,0.15) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(148,163,184,0.15) 1px, transparent 1px),
+            radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.04) 40%, transparent 70%)
+          `,
+          backgroundSize: "40px 40px, 40px 40px, 100% 100%",
+        }}
+      />
+      {/* Dark mode */}
       {/* patterncraft.fun: Magenta Orb Grid Background */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 hidden dark:block"
         style={{
-      background: "#020617",
-      backgroundImage: `
-        linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),
-        radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)
-      `,
-      backgroundSize: "40px 40px, 40px 40px, 100% 100%",
+          background: "#020617",
+          backgroundImage: `
+            linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),
+            radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)
+          `,
+          backgroundSize: "40px 40px, 40px 40px, 100% 100%",
         }}
       />
     </div>

@@ -16,7 +16,7 @@ export const EXPERIENCES: Experience[] = [
     company: "EPI - Multidisciplinary International School",
     companyUrl: "https://episup.com/",
     date: "Sep 2021 — July 2024",
-    location: "Sousse, TN",
+    location: "Sousse, Tunisia",
     locationType: "Onsite",
     description: "Completed engineering diploma in computer science.",
   },

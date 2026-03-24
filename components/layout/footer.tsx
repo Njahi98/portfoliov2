@@ -1,9 +1,9 @@
 import {
   GithubLogoIcon,
   LinkedinLogoIcon,
-  MoonIcon,
   TranslateIcon,
 } from "@phosphor-icons/react/dist/ssr"
+import ThemeSwitcher from "./theme-switcher"
 
 export default function Footer() {
   return (
@@ -33,10 +33,7 @@ export default function Footer() {
             size={22}
             className="text-slate-400/80 transition-all duration-300 hover:scale-110 hover:text-fuchsia-400 cursor-pointer"
           />
-          <MoonIcon
-            size={22}
-            className="text-slate-400/80 transition-all duration-300 hover:scale-110 hover:text-fuchsia-400 cursor-pointer"
-          />
+          <ThemeSwitcher/>
         </div>
       </div>
     </footer>
