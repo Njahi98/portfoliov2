@@ -1,6 +1,13 @@
 import { EXPERIENCES } from "@/components/data/experience"
 import ExperienceItem from "@/components/layout/experience-item"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Experience | Njahi Oussama - Full Stack Web Developer",
+  description:
+    "Work history and professional experience — roles, companies, and highlights.",
+}
 
 export default async function page() {
   const { t: tExp } = await getT("experience")

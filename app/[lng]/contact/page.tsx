@@ -1,6 +1,13 @@
 import { CONTACT_RECORDS } from "@/components/data/contact-data"
 import ContactItem from "@/components/layout/contact-item"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact | Njahi Oussama - Full Stack Web Developer",
+  description:
+    "Get in touch with Njahi Oussama — email, social links, and location.",
+}
 
 export default async function page() {
   const { t } = await getT("contact")

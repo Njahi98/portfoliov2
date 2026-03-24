@@ -1,6 +1,13 @@
 import { stackCategories } from "@/components/data/stack-category"
 import StackCategory from "@/components/layout/stack-category"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Stack | Njahi Oussama - Full Stack Web Developer",
+  description:
+    "Technologies, tools, and languages used for full stack web development.",
+}
 
 export default async function page() {
   const { t } = await getT("stack")

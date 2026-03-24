@@ -6,7 +6,14 @@ import {
   ReadCvLogoIcon,
 } from "@phosphor-icons/react/dist/ssr"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "Home | Njahi Oussama - Full Stack Web Developer",
+  description:
+    "Full stack web developer portfolio — projects, experience, stack, and contact.",
+}
 
 export default async function page() {
   const { t } = await getT("home")

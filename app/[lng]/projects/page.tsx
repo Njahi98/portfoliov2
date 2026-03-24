@@ -1,6 +1,13 @@
 import ProjectCard from "@/components/layout/project-card"
 import { projects } from "@/components/data/projects"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Projects | Njahi Oussama - Full Stack Web Developer",
+  description:
+    "Selected web development projects — demos, repositories, and case notes.",
+}
 
 export default async function page({
   params,

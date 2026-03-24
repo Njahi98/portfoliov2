@@ -1,16 +1,34 @@
 import { projects } from "@/components/data/projects"
 import { CarouselComponent } from "@/components/layout/carousel"
 import { getT } from "next-i18next/server"
+import type { Metadata } from "next"
 import { notFound } from "next/navigation"
+
+interface ProjectPageProps {
+  params: Promise<{ slug: string; lng: string }>
+}
+
+export async function generateMetadata({
+  params,
+}: ProjectPageProps): Promise<Metadata> {
+  const { slug } = await params
+  const project = projects.find((p) => p.slug === slug)
+  if (!project) {
+    return { title: "Project not found" }
+  }
+  const { t } = await getT("projects")
+  const title = t(`items.${project.slug}.title`)
+  const description = t(`items.${project.slug}.description`)
+  return {
+    title: `${title} | Njahi Oussama - Full Stack Web Developer`,
+    description,
+  }
+}
 
 export function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }))
-}
-
-interface ProjectPageProps {
-  params: Promise<{ slug: string; lng: string }>
 }
 
 export default async function page({ params }: ProjectPageProps) {
