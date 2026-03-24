@@ -5,18 +5,22 @@ import {
   PaperPlaneTiltIcon,
   ReadCvLogoIcon,
 } from "@phosphor-icons/react/dist/ssr"
+import { getT } from "next-i18next/server"
 import Link from "next/link"
-export default function page() {
+export default async function page() {
+  const { t } = await getT('home')
+  const content = {
+    title:t('title'),
+  }
   return (
     <section className="flex min-h-[calc(100dvh-5rem)] sm:min-h-[calc(100dvh-7rem)] flex-col items-center justify-center px-6 pt-10 md:pt-0">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <p className="mb-4 text-xs font-semibold tracking-[0.32em] text-fuchsia-700/80 uppercase dark:text-fuchsia-300/80">
-          Full Stack Web Developer
+          {content.title}
         </p>
 
         <h1 className="mb-4 text-4xl font-semibold tracking-tight text-balance text-slate-900 sm:text-5xl md:text-6xl dark:text-slate-50">
-          Hi, I&apos;m{" "}
-          <span className="bg-linear-to-r bg-clip-text">Oussama Njahi</span>
+          Hi, I&apos;m Oussama Njahi
         </h1>
 
         <p className="mb-8 max-w-2xl text-sm text-balance text-slate-600 sm:text-base dark:text-slate-400">

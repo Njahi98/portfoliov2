@@ -3,6 +3,7 @@ import {
   LinkedinLogoIcon,
 } from "@phosphor-icons/react/dist/ssr"
 import ThemeSwitcher from "./theme-switcher"
+import { LanguageSwitcher } from "./language-switcher"
 
 export default function Footer() {
   return (
@@ -28,6 +29,7 @@ export default function Footer() {
           >
             <LinkedinLogoIcon size={22} />
           </a>
+          <LanguageSwitcher/>
           <ThemeSwitcher/>
         </div>
       </div>

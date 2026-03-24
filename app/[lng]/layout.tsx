@@ -8,6 +8,20 @@ import HeaderDesktop from "@/components/layout/header-desktop"
 import HeaderMobile from "@/components/layout/header-mobile"
 import Background from "@/components/layout/background"
 import Footer from "@/components/layout/footer"
+import {
+  initServerI18next,
+  getT,
+  getResources,
+  generateI18nStaticParams,
+} from "next-i18next/server"
+import { I18nProvider } from "next-i18next/client"
+import i18nConfig from "@/i18n.config"
+
+initServerI18next(i18nConfig)
+
+export async function generateStaticParams() {
+  return generateI18nStaticParams()
+}
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -24,14 +38,19 @@ export const metadata: Metadata = {
   description: "Welcome to Njahi Oussama's portfolio",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode
+  params: Promise<{ lng: string }>
 }>) {
+  const { lng } = await params
+  const { i18n } = await getT()
+  const resources = getResources(i18n)
   return (
     <html
-      lang="en"
+      lang={lng}
       suppressHydrationWarning
       className={cn(
         "antialiased",
@@ -41,13 +60,15 @@ export default function RootLayout({
       )}
     >
       <body>
-        <ThemeProvider>
-        <Background/>
-        <HeaderDesktop />
-        <HeaderMobile />
-        {children}
-        <Footer/>
-        </ThemeProvider>
+          <ThemeProvider>
+            <Background />
+        <I18nProvider language={lng} resources={resources}>
+            <HeaderDesktop />
+            <HeaderMobile />
+            {children}
+            <Footer />
+        </I18nProvider>
+          </ThemeProvider>
       </body>
     </html>
   )
