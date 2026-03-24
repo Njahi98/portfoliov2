@@ -16,7 +16,7 @@ export default function ContactItem({ method, href, text, Icon }: Contact) {
       </div>
     </a>
   ) : (
-    <div className="flex w-full items-center gap-4 rounded-lg bg-slate-800/50 p-6">
+    <div className="flex w-full items-center gap-4 rounded-lg bg-slate-800/50 transition-colors duration-200 hover:bg-slate-800/90 p-6">
       <Icon className="shrink-0 text-slate-50" size={18} />
 
       <div className="flex flex-col items-start">

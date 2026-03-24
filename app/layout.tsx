@@ -7,6 +7,7 @@ import { Metadata } from "next"
 import HeaderDesktop from "@/components/layout/header-desktop"
 import HeaderMobile from "@/components/layout/header-mobile"
 import Background from "@/components/layout/background"
+import Footer from "@/components/layout/footer"
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         <HeaderDesktop />
         <HeaderMobile />
         {children}
+        <Footer/>
         </ThemeProvider>
       </body>
     </html>

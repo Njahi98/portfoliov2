@@ -8,10 +8,8 @@ import {
 import Link from "next/link"
 export default function page() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 pb-16 md:pt-0">
-      <div className="pointer-events-none absolute inset-x-0 top-24 -z-10 mx-auto h-64 max-w-xl" />
-
-      <section className="mx-auto flex max-w-4xl flex-col items-center text-center">
+    <section className="flex min-h-screen flex-col items-center justify-center px-6 pt-10 md:pt-0">
+      <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <p className="mb-4 text-xs font-semibold tracking-[0.32em] text-fuchsia-300/80 uppercase">
           Full Stack Web Developer
         </p>
@@ -87,7 +85,7 @@ export default function page() {
             <LinkedinLogoIcon size={32} />
           </a>
         </div>
-      </section>
+      </div>
     </section>
   )
 }
