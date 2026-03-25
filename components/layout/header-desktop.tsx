@@ -29,7 +29,7 @@ export default function HeaderDesktop() {
           />
         </Link>
 
-        <nav className="flex items-center gap-6 text-[0.72rem] font-medium tracking-[0.28em] text-slate-600 uppercase dark:text-slate-400">
+        <nav className="flex items-center gap-6 text-xs font-medium tracking-[0.28em] text-slate-600 uppercase dark:text-slate-400">
           {NAV_ITEMS.map((item) => {
             const href =
               item.segment === "" ? `/${lng}` : `/${lng}/${item.segment}`

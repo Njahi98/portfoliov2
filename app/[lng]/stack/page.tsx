@@ -23,7 +23,7 @@ export default async function page() {
           {content.pageTitle}
         </h1>
         <div className="mb-6 flex flex-col gap-4">
-          <p className="max-w-2xl text-sm text-balance text-slate-600 sm:text-base dark:text-slate-400">
+          <p className="max-w-2xl text-base text-balance text-slate-600 sm:text-lg dark:text-slate-400">
             {content.pageSubtitle}
           </p>
           <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />

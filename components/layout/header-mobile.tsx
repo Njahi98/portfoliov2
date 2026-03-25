@@ -57,7 +57,7 @@ export default function HeaderMobile() {
       </button>
       <Activity mode={open ? "visible" : "hidden"}>
         <div className="absolute inset-x-4 top-16 animate-in rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-xl shadow-slate-200/60 duration-500 fade-in slide-in-from-top-8 dark:border-slate-800/80 dark:bg-slate-950/95 dark:shadow-slate-950/80 ">
-          <nav className="flex flex-col gap-2 text-xs font-medium tracking-[0.24em] text-slate-700 uppercase dark:text-slate-300">
+          <nav className="flex flex-col gap-2 text-sm font-medium tracking-[0.24em] text-slate-700 uppercase dark:text-slate-300">
             {NAV_ITEMS.map((item) => {
               const href =
                 item.segment === "" ? `/${lng}` : `/${lng}/${item.segment}`

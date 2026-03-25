@@ -18,13 +18,13 @@ export default async function page() {
   }
 
   return (
-    <section className="mx-auto min-h-screen max-w-4xl px-6 py-32">
+    <section className="mx-auto sm:min-h-[calc(100dvh-7rem)] max-w-4xl px-6 pt-24 sm:pt-32 pb-0">
       <div className="mx-auto flex flex-col items-center text-center">
         <h1 className="mb-4 text-2xl font-semibold tracking-tight text-balance text-slate-900 sm:text-5xl md:text-4xl dark:text-slate-50">
           {content.pageTitle}
         </h1>
         <div className="mb-4 flex flex-col gap-4">
-          <p className="max-w-2xl text-sm text-balance text-slate-600 sm:text-base dark:text-slate-400">
+          <p className="max-w-2xl text-base text-balance text-slate-600 sm:text-lg dark:text-slate-400">
             {content.pageSubtitle}
           </p>
           <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />

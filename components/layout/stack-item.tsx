@@ -24,7 +24,7 @@ export function StackItem({ name, src, alt, href }: StackItemProps) {
           className="object-contain"
         />
       </div>
-      <p className="text-center text-sm leading-tight text-slate-600 dark:text-slate-400">
+      <p className="text-center text-base leading-tight text-slate-600 dark:text-slate-400">
         {name}
       </p>
     </a>

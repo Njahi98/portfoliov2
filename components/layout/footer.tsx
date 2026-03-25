@@ -13,7 +13,7 @@ export default async function Footer() {
     <footer className="flex items-center justify-center p-4 ">
       <div className="mb-6 flex w-full max-w-xl flex-col items-center justify-between gap-4 rounded-xl border border-slate-200 bg-white/70 p-4 shadow-lg shadow-slate-200/60 backdrop-blur-2xl sm:flex-row dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-fuchsia-500/10">
         <div className="flex items-center gap-2">
-          <p className="text-sm text-slate-600">{t("footer.credit")}</p>
+          <p className="text-sm sm:text-base text-slate-600">{t("footer.credit")}</p>
         </div>
         <div className="flex items-center gap-2">
           <a

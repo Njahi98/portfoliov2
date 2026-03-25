@@ -34,9 +34,9 @@ export default async function page({
     country: t("country"),
   }
   return (
-    <section className="flex min-h-[calc(100dvh-4rem)] sm:min-h-[calc(100dvh-7rem)] flex-col items-center justify-center px-6 pt-10 md:pt-0">
+    <section className="flex min-h-screen sm:min-h-[calc(100dvh-7rem)] flex-col items-center justify-center px-6 pt-12 md:pt-0">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-        <p className="mb-4 text-xs font-semibold tracking-[0.32em] text-fuchsia-700/80 uppercase dark:text-fuchsia-300/80">
+        <p className="mb-4 text-xs sm:text-sm font-semibold tracking-[0.32em] text-fuchsia-700/80 uppercase dark:text-fuchsia-300/80">
           {content.title}
         </p>
 
@@ -44,17 +44,17 @@ export default async function page({
           {content.heading}
         </h1>
 
-        <p className="mb-8 max-w-2xl text-sm text-balance text-slate-600 sm:text-base dark:text-slate-400">
+        <p className="mb-8 max-w-3xl text-sm sm:text-lg text-balance  text-slate-600 dark:text-slate-400">
           {content.intro}
         </p>
 
-        <div className="mb-10 flex flex-wrap items-center justify-center gap-3">
+        <div className="mb-10 flex w-full max-w-2xl flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href={`/${lng}/projects`}
-            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100 sm:w-auto sm:flex-1"
           >
             {content.ctaProjects}
-            <span className="inline-block text-xs transition-transform group-hover:translate-x-0.5">
+            <span className="inline-block transition-transform group-hover:translate-x-0.5">
               <ArrowUpRightIcon size={18} />
             </span>
           </Link>
@@ -62,25 +62,25 @@ export default async function page({
             href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100 sm:w-auto sm:flex-1"
           >
             {content.ctaResume}
-            <span className="inline-block text-xs transition-transform group-hover:translate-x-0.5">
+            <span className="inline-block transition-transform group-hover:translate-x-0.5">
               <ReadCvLogoIcon size={18} />
             </span>
           </a>
           <Link
             href={`/${lng}/contact`}
-            className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-900 shadow-sm shadow-slate-200/60 transition duration-200 hover:-translate-y-1 hover:border-fuchsia-400/70 hover:text-fuchsia-700 dark:border-slate-700/80 dark:bg-slate-950/60 dark:text-slate-100 dark:shadow-slate-950/60 dark:hover:text-fuchsia-100 sm:w-auto sm:flex-1"
           >
             {content.ctaContact}
-            <span className="inline-block text-xs transition-transform group-hover:translate-x-0.5">
+            <span className="inline-block transition-transform group-hover:translate-x-0.5">
               <PaperPlaneTiltIcon size={18} />
             </span>
           </Link>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 font-mono text-[0.7rem] tracking-[0.24em] text-slate-600 uppercase dark:text-slate-500">
+        <div className="flex flex-wrap items-center justify-center gap-4 font-mono text-[0.7rem] sm:text-sm tracking-[0.24em] text-slate-600 uppercase dark:text-slate-500">
           <span className="inline-flex items-center gap-2">
             <span className="h-px w-8 bg-linear-to-r from-fuchsia-500/60 to-transparent" />
             {content.availability}
