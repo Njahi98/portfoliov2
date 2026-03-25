@@ -1,6 +1,6 @@
 import { projects } from "@/components/data/projects"
 import { CarouselComponent } from "@/components/layout/carousel"
-import { getT } from "next-i18next/server"
+import { getT } from "@/lib/i18n-server"
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 

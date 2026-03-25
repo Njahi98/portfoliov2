@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/layout/project-card"
 import { projects } from "@/components/data/projects"
-import { getT } from "next-i18next/server"
+import { getT } from "@/lib/i18n-server"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

@@ -9,15 +9,12 @@ import HeaderMobile from "@/components/layout/header-mobile"
 import Background from "@/components/layout/background"
 import Footer from "@/components/layout/footer"
 import {
-  initServerI18next,
   getT,
   getResources,
   generateI18nStaticParams,
-} from "next-i18next/server"
+} from "@/lib/i18n-server"
 import { I18nProvider } from "next-i18next/client"
 import i18nConfig from "@/i18n.config"
-
-initServerI18next(i18nConfig)
 
 const allNamespaces = [
   "common",

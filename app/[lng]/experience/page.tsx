@@ -1,6 +1,6 @@
 import { EXPERIENCES } from "@/components/data/experience"
 import ExperienceItem from "@/components/layout/experience-item"
-import { getT } from "next-i18next/server"
+import { getT } from "@/lib/i18n-server"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 import { stackCategories } from "@/components/data/stack-category"
 import StackCategory from "@/components/layout/stack-category"
-import { getT } from "next-i18next/server"
+import { getT } from "@/lib/i18n-server"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {

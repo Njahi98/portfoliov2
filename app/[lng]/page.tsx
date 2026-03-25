@@ -5,7 +5,7 @@ import {
   PaperPlaneTiltIcon,
   ReadCvLogoIcon,
 } from "@phosphor-icons/react/dist/ssr"
-import { getT } from "next-i18next/server"
+import { getT } from "@/lib/i18n-server"
 import type { Metadata } from "next"
 import Link from "next/link"
 
