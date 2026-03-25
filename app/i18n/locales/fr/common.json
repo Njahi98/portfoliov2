@@ -15,5 +15,9 @@
   "locationType": {
     "remote": "À distance",
     "onsite": "Sur site"
+  },
+  "notFound": {
+    "message": "Cette page n'a pas pu être trouvée.",
+    "backHome": "Retour à l'accueil"
   }
 }

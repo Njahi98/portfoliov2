@@ -18,7 +18,7 @@ export default async function page() {
   }
 
   return (
-    <section className="mx-auto sm:min-h-[calc(100dvh-7rem)] max-w-4xl px-6 pt-24 sm:pt-32 pb-0">
+    <section className="mx-auto sm:min-h-[calc(100dvh-8rem)] max-w-4xl px-6 pt-24 sm:pt-32 pb-0">
       <div className="mx-auto flex flex-col items-center text-center">
         <h1 className="mb-4 text-2xl font-semibold tracking-tight text-balance text-slate-900 sm:text-5xl md:text-4xl dark:text-slate-50">
           {content.pageTitle}

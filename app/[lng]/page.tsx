@@ -34,7 +34,7 @@ export default async function page({
     country: t("country"),
   }
   return (
-    <section className="flex min-h-screen sm:min-h-[calc(100dvh-7rem)] flex-col items-center justify-center px-6 pt-12 md:pt-0">
+    <section className="flex min-h-screen sm:min-h-[calc(100dvh-8rem)] flex-col items-center justify-center px-6 pt-12 md:pt-0">
       <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
         <p className="mb-4 text-xs sm:text-sm font-semibold tracking-[0.32em] text-fuchsia-700/80 uppercase dark:text-fuchsia-300/80">
           {content.title}

@@ -15,5 +15,9 @@
   "locationType": {
     "remote": "Remote",
     "onsite": "Onsite"
+  },
+  "notFound":{
+    "message":"This page could not be found.",
+    "backHome":"Go back home"
   }
 }

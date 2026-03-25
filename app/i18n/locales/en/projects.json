@@ -28,6 +28,11 @@
       "title": "Portfolio v1",
       "description": "Responsive portfolio built with HTML5, CSS3, JavaScript, and React featuring smooth Framer Motion animations and integrated EmailJS contact form.",
       "longDescription": "• Built Portfolio v1 using HTML5, CSS3, JavaScript, and React for a responsive, modern interface.\n\n• Enhanced with Framer Motion to create smooth animations and dynamic transitions.\n\n• Form validation and state handling powered by React Hook Form for efficiency and performance.\n\n• Integrated EmailJS for seamless contact form functionality."
+    },
+    "portfolio-v2": {
+      "title": "Portfolio V2",
+      "description": "Modern, full-featured portfolio website built with Next.js 16, TypeScript, and featuring internationalization support, dark mode, and fully responsive design.",
+      "longDescription": "• Built Portfolio V2 using Next.js 16 with App Router and TypeScript for type-safe, modern web development.\n\n• Implemented internationalization (i18n) support for English and French with language-based routing.\n\n• Created dark/light theme switching with fully responsive design using Tailwind CSS and shadcn/ui components.\n\n• Developed organized sections (Home, Experience, Projects, Stack, Contact) with smooth carousel component for project showcase.\n\n• Structured with modular architecture including utilities, and static data management for easy customization."
     }
   }
 }

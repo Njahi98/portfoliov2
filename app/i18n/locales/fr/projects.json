@@ -28,6 +28,11 @@
       "title": "Portfolio v1",
       "description": "Portfolio responsive en HTML5, CSS3, JavaScript et React avec animations Framer Motion et formulaire de contact EmailJS.",
       "longDescription": "• Portfolio v1 en HTML5, CSS3, JavaScript et React, interface responsive et moderne\n\n• Animations et transitions fluides avec Framer Motion\n\n• Validation et état des formulaires avec React Hook Form\n\n• Formulaire de contact intégré avec EmailJS"
+    },
+    "portfolio-v2": {
+      "title": "Portfolio V2",
+      "description": "Portfolio moderne et complet construit avec Next.js 16, TypeScript, avec support de l'internationalisation, mode sombre et design entièrement responsive.",
+      "longDescription": "• Développement de Portfolio V2 avec Next.js 16, App Router et TypeScript pour un développement web moderne et type-safe.\n\n• Implémentation de l'internationalisation (i18n) pour l'anglais et le français avec routage basé sur la langue.\n\n• Création d'un système de thème clair/sombre avec design entièrement responsive utilisant Tailwind CSS et les composants shadcn/ui.\n\n• Développement de sections organisées (Accueil, Expérience, Projets, Stack, Contact) avec composant carousel fluide pour la vitrine des projets.\n\n• Architecture modulaire incluant des utilitaires et gestion des données statiques pour une personnalisation facile."
     }
   }
 }
