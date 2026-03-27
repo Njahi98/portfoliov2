@@ -14,7 +14,6 @@ import {
   generateI18nStaticParams,
 } from "@/lib/i18n-server"
 import { I18nProvider } from "next-i18next/client"
-import i18nConfig from "@/i18n.config"
 
 const allNamespaces = [
   "common",
