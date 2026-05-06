@@ -119,6 +119,11 @@ export const stackCategories: StackCategoryData[] = [
         href: "https://github.com/",
       },
       {
+        name: "Docker",
+        src: "/icons/Docker.svg",
+        href: "https://www.docker.com/",
+      },
+      {
         name: "Postman",
         src: "/icons/Postman.svg",
         href: "https://www.postman.com/",
