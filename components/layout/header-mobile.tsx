@@ -33,7 +33,7 @@ export default function HeaderMobile() {
       <button
         type="button"
         aria-label={t("toggleNav")}
-        className="relative flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 shadow-sm shadow-slate-200/60 transition hover:border-fuchsia-500/70 hover:text-fuchsia-700 dark:border-slate-700/70 dark:bg-slate-900/80 dark:text-slate-100 dark:shadow-slate-900/80 dark:hover:text-fuchsia-300"
+        className="relative flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 shadow-sm shadow-slate-200/60 transition hover:border-sky-500/70 hover:text-sky-700 dark:border-slate-700/70 dark:bg-slate-900/80 dark:text-slate-100 dark:shadow-slate-900/80 dark:hover:text-sky-300"
         onClick={() => setOpen((prev) => !prev)}
       >
         <span className="sr-only">{t("toggleNav")}</span>
@@ -73,8 +73,8 @@ export default function HeaderMobile() {
                   href={href}
                   className={`flex items-center justify-between rounded-xl px-3 py-2 transition-colors ${
                     isActive
-                      ? "bg-slate-100 text-fuchsia-700 dark:bg-slate-900 dark:text-fuchsia-300"
-                      : "hover:bg-slate-100 hover:text-fuchsia-700 dark:hover:bg-slate-900 dark:hover:text-fuchsia-300"
+                      ? "bg-slate-100 text-sky-700 dark:bg-slate-900 dark:text-sky-300"
+                      : "hover:bg-slate-100 hover:text-sky-700 dark:hover:bg-slate-900 dark:hover:text-sky-300"
                   }`}
                   onClick={() => setOpen(false)}
                 >
@@ -82,7 +82,7 @@ export default function HeaderMobile() {
                     <span>{t(item.labelKey)}</span>
                   </div>
                   <span
-                    className={`h-1 w-1 rounded-full bg-linear-to-r from-fuchsia-500 to-sky-400 ${
+                    className={`h-1 w-1 rounded-full bg-linear-to-r from-sky-500 to-cyan-400 ${
                       isActive ? "opacity-100" : "opacity-60"
                     }`}
                   />

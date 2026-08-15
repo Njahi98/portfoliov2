@@ -47,7 +47,7 @@ export default async function page({ params }: ProjectPageProps) {
       <h1 className="mb-4 text-center text-2xl font-semibold tracking-tight text-balance text-slate-900 dark:text-slate-50">
         {title}
       </h1>
-      <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
+      <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-sky-800 via-sky-300 to-sky-800" />
       <CarouselComponent
         images={project.images}
         githubUrl={project.githubUrl}

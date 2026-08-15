@@ -54,7 +54,7 @@ export function CarouselComponent({
   }, [api])
 
   return (
-    <div className="mx-auto flex w-full flex-col justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-6 shadow-lg shadow-slate-200/60 backdrop-blur-2xl dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-fuchsia-500/10">
+    <div className="mx-auto flex w-full flex-col justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-6 shadow-lg shadow-slate-200/60 backdrop-blur-2xl dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-sky-500/10">
       <Link
         href={`/${lng}/projects`}
         className="flex max-w-fit items-center text-base sm:text-lg gap-2 text-slate-700 transition-all duration-500 hover:-translate-x-1.5 hover:opacity-60 dark:text-slate-200"

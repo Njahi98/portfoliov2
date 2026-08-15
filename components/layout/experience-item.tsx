@@ -29,7 +29,7 @@ export default function ExperienceItem({
         <span className="h-3 w-3 rounded-full bg-slate-900 dark:bg-slate-50" />
         <span className="w-0.5 flex-1 bg-slate-200 dark:bg-slate-700" />
       </div>
-      <div className="mb-4 flex w-full flex-col gap-6 rounded-xl border border-slate-200 bg-white/70 p-4 text-slate-900 shadow-lg shadow-slate-200/60 backdrop-blur-2xl transition-all duration-200 hover:translate-x-1 hover:bg-white/90 dark:border-slate-800/70 dark:bg-slate-950/70 dark:text-slate-50 dark:shadow-fuchsia-500/10 dark:hover:bg-slate-950/80">
+      <div className="mb-4 flex w-full flex-col gap-6 rounded-xl border border-slate-200 bg-white/70 p-4 text-slate-900 shadow-lg shadow-slate-200/60 backdrop-blur-2xl transition-all duration-200 hover:translate-x-1 hover:bg-white/90 dark:border-slate-800/70 dark:bg-slate-950/70 dark:text-slate-50 dark:shadow-sky-500/10 dark:hover:bg-slate-950/80">
         <div className="flex flex-col gap-4 md:flex-row md:justify-between">
           <div className="">
             <p className="text-md font-semibold tracking-tight md:text-xl">
@@ -41,7 +41,7 @@ export default function ExperienceItem({
                 href={companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-600 hover:text-fuchsia-700 dark:text-slate-400 dark:hover:text-slate-50"
+                className="text-sm text-slate-600 hover:text-sky-700 dark:text-slate-400 dark:hover:text-slate-50"
               >
                 {company}
               </a>

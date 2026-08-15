@@ -1,5 +1,5 @@
 "use client"
-import { GlobeIcon } from "@phosphor-icons/react"
+import { TranslateIcon } from "@phosphor-icons/react"
 import { usePathname, useRouter } from "next/navigation"
 
 export function LanguageSwitcher() {
@@ -15,10 +15,10 @@ export function LanguageSwitcher() {
   return (
     <div>
       <button
-        className="translate-y-0.5 cursor-pointer text-slate-600 transition-all duration-300 hover:scale-110 hover:text-fuchsia-500 dark:text-slate-400/80 dark:hover:text-fuchsia-400"
+        className="translate-y-0.5 cursor-pointer text-slate-600 transition-all duration-300 hover:scale-110 hover:text-sky-500 dark:text-slate-400/80 dark:hover:text-sky-400"
         onClick={() => switchLocale()}
       >
-        <GlobeIcon size={24} />
+        <TranslateIcon size={24} />
       </button>
     </div>
   )

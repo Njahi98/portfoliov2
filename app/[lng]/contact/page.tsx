@@ -27,9 +27,9 @@ export default async function page() {
           <p className="max-w-2xl text-base text-balance text-slate-600 sm:text-lg dark:text-slate-400">
             {content.pageSubtitle}
           </p>
-          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-fuchsia-800 via-fuchsia-300 to-fuchsia-800" />
+          <p className="mx-auto mb-8 h-px w-20 rounded-full bg-linear-to-r from-sky-800 via-sky-300 to-sky-800" />
         </div>
-        <div className="flex w-full max-w-xl flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-2 shadow-lg shadow-slate-200/60 backdrop-blur-2xl sm:p-4 dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-fuchsia-500/10">
+        <div className="flex w-full max-w-xl flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-2 shadow-lg shadow-slate-200/60 backdrop-blur-2xl sm:p-4 dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-sky-500/10">
           {CONTACT_RECORDS.map((item) => (
             <ContactItem
               key={item.id}

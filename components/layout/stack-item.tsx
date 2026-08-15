@@ -13,7 +13,7 @@ export function StackItem({ name, src, alt, href }: StackItemProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-4 shadow-lg shadow-slate-200/60 backdrop-blur-2xl transition-all duration-200 hover:-translate-y-1 hover:opacity-70 dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-fuchsia-500/10"
+      className="flex w-full flex-col items-center justify-center gap-4 rounded-xl border border-slate-200 bg-white/70 p-4 shadow-lg shadow-slate-200/60 backdrop-blur-2xl transition-all duration-200 hover:-translate-y-1 hover:opacity-70 dark:border-slate-800/70 dark:bg-slate-950/70 dark:shadow-sky-500/10"
     >
       <div className="flex h-12 w-12 items-center justify-center">
         <Image
