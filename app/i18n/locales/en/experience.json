@@ -3,34 +3,49 @@
   "pageSubtitle": "The steps I've taken to grow in software development.",
   "items": {
     "1": {
+      "title": "Public Services Advisor",
+      "company": "ENA Tunisie (école nationale d'administration)",
+      "date": "Sep 2026 — Present",
+      "location": "Tunis, Tunisia",
+      "description": "Currently serving as a Public Services Advisor at ENA Tunisie, contributing to public administration training and development.",
+      "link": "https://www.ena.tn/"
+    },
+    "2": {
+      "title": "Freelance Web Developer",
+      "company": "Freelance",
+      "date": "Aug 2024 — Aug 2026",
+      "location": "Remote",
+      "description": "Built and deployed custom web applications for small business clients using Next.js, React, Node.js, and PostgreSQL."
+    },
+    "3": {
       "title": "Engineering Diploma in Computer Science",
       "company": "EPI - Multidisciplinary International School",
       "date": "Sep 2021 — July 2024",
       "location": "Sousse, Tunisia",
       "description": "Completed engineering diploma in computer science."
     },
-    "2": {
+    "4": {
       "title": "Web Development Intern",
       "company": "IWARE",
       "date": "Feb 2024 — June 2024",
       "location": "Sousse, Tunisia",
       "description": "Developed an admin dashboard with React, Spring Boot, MongoDB, and JWT. Built a WebSocket-based notification system and internship management platform with Google Meet scheduling."
     },
-    "3": {
+    "5": {
       "title": "Web Development Intern",
       "company": "IWARE",
       "date": "July 2023 — Aug 2023",
       "location": "Sousse, Tunisia",
       "description": "Designed and built an ERP company landing page using React, Tailwind CSS, and Framer Motion with responsive design and smooth animations."
     },
-    "4": {
+    "6": {
       "title": "Preparatory Cycle for Engineering Studies",
       "company": "Faculty of Sciences of Monastir",
       "date": "Sep 2018 — July 2021",
       "location": "Monastir, Tunisia",
       "description": "Completed preparatory cycle for engineering studies."
     },
-    "5": {
+    "7": {
       "title": "Baccalaureate Diploma",
       "company": "Kasserine Pioneer High School",
       "date": "Sep 2017 — June 2018",

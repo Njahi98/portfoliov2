@@ -3,34 +3,49 @@
   "pageSubtitle": "Les étapes de mon parcours en développement logiciel.",
   "items": {
     "1": {
+      "title": "Conseiller en services publics",
+      "company": "ENA Tunisie (école nationale d'administration)",
+      "date": "Sept. 2026 — Aujourd'hui",
+      "location": "Tunis, Tunisie",
+      "description": "Je travaille actuellement en tant que conseiller en services publics à l'ENA Tunisie, en contribuant à la formation et au développement de l'administration publique.",
+      "link": "https://www.ena.tn/"
+    },
+    "2": {
+      "title": "Développeur web freelance",
+      "company": "Freelance",
+      "date": "Août 2024 — Août 2026",
+      "location": "À distance",
+      "description": "Conception et déploiement d'applications web personnalisées pour des petites entreprises clientes, en utilisant Next.js, React, Node.js et PostgreSQL."
+    },
+    "3": {
       "title": "Diplôme d'ingénieur en informatique",
       "company": "EPI — École pluridisciplinaire internationale",
       "date": "Sept. 2021 — Juil. 2024",
       "location": "Sousse, Tunisie",
       "description": "Obtention du diplôme d'ingénieur en informatique."
     },
-    "2": {
+    "4": {
       "title": "Stagiaire développement web",
       "company": "IWARE",
       "date": "Fév. 2024 — Juin 2024",
       "location": "Sousse, Tunisie",
-      "description": "Tableau de bord admin avec React, Spring Boot, MongoDB et JWT. Système de notifications WebSocket et plateforme de gestion de stages avec planification Google Meet."
+      "description": "Développement d'un tableau de bord d'administration avec React, Spring Boot, MongoDB et JWT. Création d'un système de notifications basé sur WebSocket et d'une plateforme de gestion des stages avec planification Google Meet."
     },
-    "3": {
+    "5": {
       "title": "Stagiaire développement web",
       "company": "IWARE",
       "date": "Juil. 2023 — Août 2023",
       "location": "Sousse, Tunisie",
-      "description": "Conception et réalisation d'une page vitrine ERP en React, Tailwind CSS et Framer Motion, responsive avec animations soignées."
+      "description": "Conception et réalisation d'une page vitrine ERP avec React, Tailwind CSS et Framer Motion, en version responsive avec des animations fluides."
     },
-    "4": {
+    "6": {
       "title": "Cycle préparatoire aux études d'ingénieur",
       "company": "Faculté des sciences de Monastir",
       "date": "Sept. 2018 — Juil. 2021",
       "location": "Monastir, Tunisie",
-      "description": "Cycle préparatoire aux études d'ingénieur."
+      "description": "Obtention du cycle préparatoire aux études d'ingénieur."
     },
-    "5": {
+    "7": {
       "title": "Baccalauréat",
       "company": "Lycée pilote de Kasserine",
       "date": "Sept. 2017 — Juin 2018",
